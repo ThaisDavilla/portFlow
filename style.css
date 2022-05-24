@@ -1,29 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,600;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: 'Montserrat', sans-serif;
 }
 header{
+    max-width: 1920px;
+    margin: auto;
     width: 100%;
-    height:20vh ;
+    height: 15vh ;
     display: flex;
     flex-direction: row;
     
 }
+.menuCompacto{
+    display: none;
+}
     
 .menu{
     display: flex;
-    justify-content: space-evenly;
-    width:90%;
-}
-nav{
-    width: 30%;
-}
-ul{
-    
-    display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+    width:100%;
+    align-items: center;
 }
 
+.menu p{
+    font-weight: bold;
+    font-size: 3.8vh;
+
+}
+nav{
+    width: 25%;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    font-weight:lighter;
+    font-size: 3,2vh;
+    color:#707070;
+    
+}
+li:hover{
+    font-weight: bold;
+    color:#000000;
+    cursor:pointer;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    background-image: url(imagens/laranjaazul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main section{
+    width: 70%;
+    height: 25vh;
+    position: relative;
+    left:35vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1{
+    font-size: 7.48vh;
+    color:#ffffff;
+    font-weight: bolder;
+}
+main p{
+    font-size: 3vh;
+    color:#ffffff;
+    font-weight: lighter;
+}
+main img{
+    width: 100px;
+    height: 100px;
+}
