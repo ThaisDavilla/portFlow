@@ -5,6 +5,7 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Montserrat', sans-serif;
+    border: ;
 }
 header{
     max-width: 1920px;
@@ -12,8 +13,7 @@ header{
     width: 100%;
     height: 15vh ;
     display: flex;
-    flex-direction: row;
-    
+    justify-content: space-around;
 }
 .menuCompacto{
     display: none;
@@ -21,7 +21,7 @@ header{
     
 .menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width:100%;
     align-items: center;
 }
@@ -29,54 +29,97 @@ header{
 .menu p{
     font-weight: bold;
     font-size: 3.8vh;
-
+    position: relative;
+    right: 15%;
 }
 nav{
-    width: 25%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: 15%;
 }
 ul{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-weight:lighter;
-    font-size: 3,2vh;
+    font-size: 2,5vh;
     color:#707070;
-    
 }
 li:hover{
     font-weight: bold;
     color:#000000;
     cursor:pointer;
 }
-main{
+@media (max-width:900px){
+    header{
+        display: initial;
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+    }
+    .menu nav {
+        display: none;
+    }
+    
+}
+
+.laranjaAzul{
     width: 100%;
     height: 85vh;
-    background-image: url(imagens/laranjaazul.png);
+    background-image:url(imagens/laranjaazul.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-main section{
-    width: 70%;
-    height: 25vh;
-    position: relative;
-    left:35vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 h1{
-    font-size: 7.48vh;
+    font-size: 9.48vh;
     color:#ffffff;
     font-weight: bolder;
+    position: absolute;
+    left: 8%;
 }
 main p{
     font-size: 3vh;
     color:#ffffff;
     font-weight: lighter;
+    position: absolute;
+    left: 9.5%;
+    bottom:20%;
 }
-main img{
-    width: 100px;
-    height: 100px;
+.photos{
+    width: 80%;
+    height: 125vh;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-top: 3%;
+    margin-left: 8%;
+}
+.photos img{
+    width: 250px;
+    height: 250px;
+}
+footer{
+    width: 80%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 9%;
+    border: solid;
+}
+.contatos{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.contatos img{
+    width: 22px;
 }
