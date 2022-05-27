@@ -204,11 +204,12 @@ button{
 @media (max-width:600px) {
     footer{
         width: 72%;
-        height: 18vh;
+        height: 20vh;
         display: flex;
         flex-direction: column;
-        justify-content:space-between;
+        justify-content:space-around;
         margin-left: 15%;
+        border: solid;
         
     }
     .contatos{
@@ -216,23 +217,40 @@ button{
         display: flex;
         justify-content: space-around;
         background-color: #7FDBD4;
+        
     }
     .contatos img{
         width: 19px;
     }
     .informacao{
-        width: 72%;
+        width: 66%;
         display: flex;
         flex-direction: column;
-        margin-right: 20%;
+        margin-right: 26%;
+        border: ;
     }
     .direitos{
-        font-size: 10px;
+        font-size: 9px;
         font-weight: bold;
     }
     .layout{
-        font-size: 8px;
+        font-size: 7.5px;
         color:#707070;
+        
+    }
+    button{
+        display: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 35%;
+        color:#CCCCCC;
+        background-color: #707070;
+        position: relative;
+        left: 36%;
+        bottom: 30%;
+        border:none;
     }
     
 }
